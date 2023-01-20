@@ -1,0 +1,270 @@
+.nav-bar {
+  position: relative;
+  margin-top: 45px;
+  padding: 0 3rem;
+  transition: .5s;
+  z-index: 9999;
+  display: block;
+  position: sticky;
+  top: 0; left: 0; right: 0;
+
+  
+}
+
+
+
+.navbar {
+  box-shadow: 0 0 30px rgba(0, 0, 0, .08);
+}
+
+.navbar .dropdown-toggle::after {
+  border: none;
+  content: "\f107";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  vertical-align: middle;
+  margin-left: 5px;
+  transition: .5s;
+}
+
+.navbar .dropdown-toggle[aria-expanded=true]::after {
+  transform: rotate(-180deg);
+}
+
+.navbar-light .navbar-nav .nav-link {
+  margin-right: 30px;
+  padding: 25px 0;
+  color: #FFFFFF;
+  font-size: 15px;
+  text-transform: uppercase;
+  outline: none;
+}
+
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar-light .navbar-nav .nav-link.active {
+  color: var(--primary);
+}
+
+@media (max-width: 991.98px) {
+  .nav-bar {
+      margin: 0;
+      padding: 0;
+  }
+
+  .navbar-light .navbar-nav .nav-link  {
+      margin-right: 0;
+      padding: 10px 0;
+  }
+
+  .navbar-light .navbar-nav {
+      border-top: 1px solid #EEEEEE;
+  }
+}
+
+.navbar-light .navbar-brand {
+  height: 75px;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: var(--dark);
+  font-weight: 500;
+}
+
+@media (min-width: 992px) {
+  .navbar .nav-item .dropdown-menu {
+      display: block;
+      top: 100%;
+      margin-top: 0;
+      transform: rotateX(-75deg);
+      transform-origin: 0% 0%;
+      opacity: 0;
+      visibility: hidden;
+      transition: .5s;
+      
+  }
+
+  .navbar .nav-item:hover .dropdown-menu {
+      transform: rotateX(0deg);
+      visibility: visible;
+      transition: .5s;
+      opacity: 1;
+  }
+}
+
+
+
+@media (min-width: 992px) {
+  .header {
+      margin-top: -120px;
+  }
+}
+
+
+@import url('https://fonts.googleapis.com/css?family=Abel|Abril+Fatface|Alegreya|Arima+Madurai|Dancing+Script|Dosis|Merriweather|Oleo+Script|Overlock|PT+Serif|Pacifico|Playball|Playfair+Display|Share|Unica+One|Vibur');
+/* End Fonts */
+/* Start Global rules */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+/* End Global rules */
+
+/* Start body rules */
+body {
+  /* background-image: linear-gradient(-225deg, #E3FDF5 0%, #FFE6FA 100%); */
+/* background-image: linear-gradient(to top, #a8edea 0%, #74e7bb 100%); */
+background-attachment: fixed;
+background-repeat: no-repeat;
+
+  font-family: 'Vibur', cursive;
+  font-family: 'Abel', sans-serif;
+opacity: .95;
+}
+
+
+form {
+  width: 450px;
+  min-height: 500px;
+  height: auto;
+  border-radius: 5px;
+  margin: 2% auto;
+  box-shadow: 0 9px 50px hsla(20, 67%, 75%, 0.31);
+  padding: 2%;
+  background-image: linear-gradient(-225deg, #E3FDF5 50%, #FFE6FA 50%);
+}
+form .con {
+  display: -webkit-flex;
+  display: flex;
+
+  -webkit-justify-content: space-around;
+  justify-content: space-around;
+
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+
+    margin: 0 auto;
+}
+
+header {
+  margin: 2% auto 10% auto;
+  text-align: center;
+}
+header h2 {
+  font-size: 250%;
+  font-family: 'Playfair Display', serif;
+  color: #3e403f;
+}
+header p {letter-spacing: 0.05em;}
+
+
+
+
+.input-item {
+  background: #fff;
+  color: #333;
+  padding: 14.5px 0px 15px 9px;
+  border-radius: 5px 0px 0px 5px;
+}
+
+
+
+/* Show/hide password Font Icon */
+#eye {
+  background: #fff;
+  color: #333;
+
+  margin: 5.9px 0 0 0;
+  margin-left: -20px;
+  padding: 15px 9px 19px 0px;
+  border-radius: 0px 5px 5px 0px;
+
+  float: right;
+  position: relative;
+  right: 1%;
+  top: -.2%;
+  z-index: 5;
+  
+  cursor: pointer;
+}
+/* inputs form  */
+input[class="form-input"]{
+  width: 240px;
+  height: 50px;
+
+  margin-top: 2%;
+  padding: 15px;
+  
+  font-size: 16px;
+  font-family: 'Abel', sans-serif;
+  color: #5E6472;
+
+  outline: none;
+  border: none;
+
+  border-radius: 0px 5px 5px 0px;
+  transition: 0.2s linear;
+  
+}
+input[id="txt-input"] {width: 250px;}
+/* focus  */
+input:focus {
+  transform: translateX(-2px);
+  border-radius: 5px;
+}
+
+
+button {
+  display: inline-block;
+  color: #252537;
+
+  width: 280px;
+  height: 50px;
+
+  padding: 0 20px;
+  background: #fff;
+  border-radius: 5px;
+  
+  outline: none;
+  border: none;
+
+  cursor: pointer;
+  text-align: center;
+  transition: all 0.2s linear;
+  
+  margin: 7% auto;
+  letter-spacing: 0.05em;
+}
+/* Submits */
+.submits {
+  width: 48%;
+  display: inline-block;
+  float: left;
+  margin-left: 2%;
+}
+
+/*       Forgot Password button FAF3DD  */
+.frgt-pass {background: transparent;}
+
+/*     Sign Up button  */
+.sign-up {background: #B8F2E6;}
+
+
+/* buttons hover */
+button:hover {
+  transform: translatey(3px);
+  box-shadow: none;
+}
+
+/* buttons hover Animation */
+button:hover {
+  animation: ani9 0.4s ease-in-out infinite alternate;
+}
+@keyframes ani9 {
+  0% {
+      transform: translateY(3px);
+  }
+  100% {
+      transform: translateY(5px);
+  }
+}

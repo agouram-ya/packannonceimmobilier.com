@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Inter:wght@700;800&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.0.0/swiper-bundle.css">
+    
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/sigup.css">
+    <title>espace immobilier</title>
+</head>
+<body>
+   
+           <!-- Navbar Start -->
+           <div class="container-fluid nav-bar bg-transparent">
+            <nav class="navbar navbar-expand-lg bg-white navbar-light py-0 px-4">
+                <a href="index.html" class="navbar-brand d-flex align-items-center text-center">
+                    <div class="icon p-2 me-2">
+                        <img class="img-fluid" src="logo/2.png" alt="Icon" style="width: 50px; height:50px; ;">
+                    </div>
+                    <h1 class="m-0 text-primary">immobilier</h1>
+                </a>
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+               
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav ms-auto">
+                        <a href="homme.html" class="nav-item nav-link active">Home</a>
+                        <a href="presentation.html" class="nav-item nav-link">Presentation</a>
+                        <div class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pack</a>
+                            <div class="dropdown-menu rounded-0 m-0">
+                                <a href="pack.html" class="dropdown-item">Pack gratuite</a>
+                                <a href="pack.html" class="dropdown-item">Pack starer</a>
+                                <a href="pack.html" class="dropdown-item">Pack bronze</a>
+                                <a href="pack.html" class="dropdown-item">Pack agence immo</a>
+                                <a href="pack.html" class="dropdown-item">Pack sur mesure</a>
+                            </div>
+                        </div>
+                      
+                        <a href="contact.html" class="nav-item nav-link">Contact</a>
+                        <a href="signin.html" class="nav-item nav-link" >cree votre compte</a>
+                    </div>   
+                 
+                </div>
+            </nav>
+        </div>
+        <div class="overlay">
+          
+          <form>
+             <div class="con">
+             <header class="head-form">
+                <h2>Signin In</h2>
+                <p>cree votre compte</p>
+             </header>
+             <br>
+             <div class="field-set">
+               
+                   <span class="input-item">
+                     <i class="fa fa-user-circle"></i>
+                   </span>
+                   <input class="form-input" id="txt-input" type="text" placeholder="@Name" required>
+               
+                <br>
+                
+                <span class="input-item">
+                  <i class="fa fa-user-circle"></i>
+                </span>
+                <input class="form-input" id="txt-input" type="text" placeholder="@prenom" required>
+            
+             <br>
+             
+             <span class="input-item">
+              <i class="fa fa-user-circle"></i>
+            </span>
+            <input class="form-input" id="txt-input" type="text" placeholder="@ville" required>
+        
+         <br>
+         <span class="input-item">
+          <i class="fa fa-user-circle"></i>
+        </span>
+        <input class="form-input" id="txt-input" type="text" placeholder="@numero teliphon" required>
+    
+     <br>
+     <span class="input-item">
+      <i class="fa fa-user-circle"></i>
+    </span>
+    <input class="form-input" id="txt-input" type="text" placeholder="@mail" required>
+
+ <br>
+ <span class="input-item">
+  <i class="fa fa-user-circle"></i>
+</span>
+<input class="form-input" id="txt-input" type="text" placeholder="@configue mail" required>
+
+<br>
+               
+               
+<span class="input-item">
+                  <i class="fa fa-key"></i>
+                 </span>
+                <input class="form-input" type="password" placeholder="Password" id="pwd"  name="password" required>
+                <i class="fa fa-key"></i>
+              </span>
+             <input class="form-input" type="password" placeholder="confige password" id="pwd"  name="password" required>
+            
+               <span>
+                  <i class="fa fa-eye" aria-hidden="true"  type="button" id="eye"></i>
+               </span>
+               
+               
+                <br>
+        
+                <button class="log-in"> Log In </button>
+             </div>
+            
+             <div class="other">
+              <a href="signin.html"> deja une compte</a>
+                <button class="btn submits sign-up">valide
+                <i class="fa fa-user-plus" aria-hidden="true"></i><br><br><br>
+                </button>
+             </div>
+               
+            </div>
+            
+           
+          </form>
+          </div>
+          <script>
+              function show() {
+          var p = document.getElementById('pwd');
+          p.setAttribute('type', 'text');
+      }
+      
+      function hide() {
+          var p = document.getElementById('pwd');
+          p.setAttribute('type', 'password');
+      }
+      
+      var pwShown = 0;
+      
+      document.getElementById("eye").addEventListener("click", function () {
+          if (pwShown == 0) {
+              pwShown = 1;
+              show();
+          } else {
+              pwShown = 0;
+              hide();
+          }
+      }, false);
+      
+      
+          </script>
+
+
+
+
+
+
+  
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="lib/wow/wow.min.js"></script>
+<script src="lib/easing/easing.min.js"></script>
+<script src="lib/waypoints/waypoints.min.js"></script>
+<script src="lib/owlcarousel/owl.carousel.min.js"></script>
+<script src="js/main.js"></script>

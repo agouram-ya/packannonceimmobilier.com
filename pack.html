@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Inter:wght@700;800&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/pack.css">
+    <title>presentation/espace immobilier</title>
+   
+</head>
+<style>
+    #btn {
+  background: #222;
+  height: 50px;
+  min-width: 150px;
+  border: none;
+  border-radius: 10px;
+  color: #eee;
+  font-size: 40px;
+  font-family: 'Cookie', cursive;
+  position: relative;
+  transition: 1s;
+  -webkit-tap-highlight-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  padding-top: 5px;
+}
+
+#btn #circle {
+  width: 5px;
+  height: 5px;
+  background: transparent;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  overflow: hidden;
+  transition: 500ms;
+}
+
+.noselect {
+  -webkit-touch-callout: none;
+    -webkit-user-select: none;
+     -khtml-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+}
+
+#btn:hover {
+  background: transparent;
+}
+
+#btn:hover #circle {
+  height: 50px;
+  width: 150px;
+  left: 0;
+  border-radius: 0;
+  border-bottom: 2px solid #eee;
+}
+    @media only screen and (max-width: 480px) {
+        #container{
+            width: 100%;
+            height: 100%;
+            font-size: 10px;
+    }
+    .product-image{
+        width: 100%;
+        height: 100%;
+    }
+  
+    }
+ 
+
+    
+ 
+
+
+   
+
+</style>
+
+<body>
+       <!-- Navbar Start -->
+       <div class="container-fluid nav-bar bg-transparent">
+        <nav class="navbar navbar-expand-lg bg-white navbar-light py-0 px-4">
+            <a href="index.html" class="navbar-brand d-flex align-items-center text-center">
+                <div class="icon p-2 me-2">
+                    <img class="img-fluid" src="logo/2.png" alt="Icon" style="width: 50px; height:50px; ;">
+                </div>
+                <h1 class="m-0 text-primary">immobilier</h1>
+            </a>
+            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+           
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav ms-auto">
+                    <a href="homme.html" class="nav-item nav-link active">Home</a>
+                    <a href="presentation.html" class="nav-item nav-link">Presentation</a>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pack</a>
+                        <div class="dropdown-menu rounded-0 m-0">
+                            <a href="pack.html" class="dropdown-item">Pack gratuite</a>
+                            <a href="pack.html" class="dropdown-item">Pack starer</a>
+                            <a href="pack.html" class="dropdown-item">Pack bronze</a>
+                            <a href="pack.html" class="dropdown-item">Pack agence immo</a>
+                            <a href="pack.html" class="dropdown-item">Pack sur mesure</a>
+                        </div>
+                    </div>
+                  
+                    <a href="contact.html" class="nav-item nav-link">Contact</a>
+                    <a href="signin.html" class="nav-item nav-link" >cree votre compte</a>
+                </div>   
+             
+            </div>
+        </nav>
+    </div>
+<br>
+    <div class="container">
+        <h5>ESPACE IMMOBILIER  est une société qui intervient dans le domaine de l’immobilier, <br> des Bâtiments et travaux publics</h5>
+
+        <div class="top">
+            <ul>
+                <li><a href="#img_1"><img src="img/pack1.jpeg"></a></li>
+                <li><a href="#img_2"><img src="img/pack2.jpeg"></a></li>
+                <li><a href="#img_3"><img src="img/pack3.jpeg"></a></li>
+                <li><a href="#img_4"><img src="img/pack4.jpeg"></a></li>
+                <li><a href="#img_5"><img src="img/pack5.jpeg"></a></li>
+                <li><a href="#img_6"><img src="img/pack6.jpeg"></a></li>
+                <li><a href="#img_7"><img src="img/pack7.jpeg"></a></li>
+                <li><a href="#img_8"><img src="img/pack8.jpeg"></a></li>
+                <li><a href="#img_9"><img src="img/pack9.jpeg"></a></li>
+                <li><a href="#img_10"><img src="img/pack10.jpeg"></a></li>
+                <li><a href="#img_11"><img src="img/pack11.jpeg"></a></li>
+                <li><a href="#img_12"><img src="img/pack12.jpeg"></a></li>
+               
+            </ul>
+            <a href="#_1" class="lightbox trans" id="img_1"><img src="img/pack1.jpeg"></a>
+            <a href="#_2" class="lightbox trans" id="img_2"><img src="img/pack2.jpeg"></a>
+            <a href="#_3" class="lightbox trans" id="img_3"><img src="img/pack3.jpeg"></a>
+            <a href="#_4" class="lightbox trans" id="img_4"><img src="img/pack4.jpeg"></a>
+            <a href="#_5" class="lightbox trans" id="img_5"><img src="img/pack5.jpeg"></a>
+            <a href="#_6" class="lightbox trans" id="img_6"><img src="img/pack6.jpeg"></a>
+            <a href="#_7" class="lightbox trans" id="img_7"><img src="img/pack7.jpeg"></a>
+            <a href="#_8" class="lightbox trans" id="img_8"><img src="img/pack8.jpeg"></a>
+            <a href="#_9" class="lightbox trans" id="img_9"><img src="img/pack9.jpeg"></a>
+            <a href="#_10" class="lightbox trans" id="img_10"><img src="img/pack10.jpeg"></a>
+            <a href="#_11" class="lightbox trans" id="img_11"><img src="img/pack11.jpeg"></a>
+            <a href="#_12" class="lightbox trans" id="img_12"><img src="img/pack12.jpeg"></a>
+        </div>
+    </div>
+
+<!-- sujet -->
+<div class="sujet">
+    <h1 class="wrapperh1">Les Pack</h1>
+    <div class="wrapper">
+        <div class="media">
+        <div class="layer">
+            <p><a href="#packgratuit">Pack gratuite</a></p>
+        </div>
+        <img src="img/pack/img1.jpg" alt="" />
+        </div>
+        <div class="media">
+        <div class="layer">
+            <p><a href="#Packstarer">Pack starer</a></p>
+        </div>
+        <img src="img/pack/img2.png" alt="" />
+        </div>
+        <div class="media">
+        <div class="layer">
+            <p><a href="#Packagenceimmo">Pack agence immo</a></p>
+        </div>
+        <img src="img/pack/img3.jpg" alt="" />
+        </div>
+    </div>
+    <div class="wrapper">
+        <div class="media">
+        <div class="layer">
+            <p><a href="#packbronze">Pack bronze</a></p>
+        </div>
+        <img src="img/pack/img4.jpeg" alt="" />
+        </div>
+        <div class="media">
+        <div class="layer">
+            <p><a href="#packsurmesure">Pack sur mesure</a></p>
+        </div>
+        <img src="img/pack/img5.jpeg" alt="" />
+        </div>
+    </div>
+       
+    
+    </div><br><br><br><br>
+  <div id="packgratuit">
+    <center> <h2>parck gratuite</h2></center>
+   
+        <div id="container">
+            <div class="product-details">
+                <h1>Parck Gratuite</h1>
+            		
+                <span class="hint-star star">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                </span>
+                    <p class="information" >" . Il vous permet de déposer votre annonce gratuitement et d'être contacté directement par les personnes intéressées sans recours à un intermédiaire "
+                        <link href="https://fonts.googleapis.com/css2?family=Cookie&display=swap" rel="stylesheet">
+
+                        <div id="btn"><span class="noselect"> 0 dh<a href="signup.html">prendre</a>
+                            </span><div id="circle"></div></div>
+
+
+                    </p>
+                    
+                
+                            
+        </div>   
+            <div class="product-image">
+                
+                <img src="img/pack/imag20.jpg" alt="Omar Dsoky">
+           
+            <div class="info">
+                <h2>caractéristiques</h2>
+                <ul>
+                    <li><strong>Annonces: </strong>3</li>
+                    <li><strong>Prix: </strong>0</li>
+                    <!-- <li><strong>Zones: </strong>9 - 11</li>
+                    <li><strong>Height: </strong>2 - 3 feet</li>
+                    <li><strong>Blooms in: </strong>Mid‑Summer - Mid‑Fall</li>
+                    <li><strong>Features: </strong>Tolerates heat</li> -->
+                </ul>
+            </div>
+            </div>
+            </div>
+        </div>
+        <div id="Packstarer">
+            <center><h2>Pack starer</h2></center>
+            <div id="container">
+                <div class="product-details">
+                <h1>Pack starer</h1>
+                <span class="hint-star star">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                </span>
+                    <p class="information">" Ce pack Starter intègre en effet tous les éléments indispensables pour démarrer une activité dans l’immobilier. Le premier d’entre eux est son prix particulièrement accessible "
+                        <link href="https://fonts.googleapis.com/css2?family=Cookie&display=swap" rel="stylesheet">
+
+                <div id="btn"><span class="noselect"> <a href="signup.html">prendre</a>
+                    </span><div id="circle"></div></div>
+
+                    </p>
+                    
+            </div>
+                
+            <div class="product-image">
+                
+                <img src="img/pack/imag24.jpg" alt="Omar Dsoky">
+             
+            <div class="info">
+                <h2>caractéristiques</h2>
+                <ul>
+                    <li><strong>annonce: </strong>7</li>
+                    <li><strong>prix: </strong>100 dh par moi</li>
+                    <!-- <li><strong>Zones: </strong>9 - 11</li>
+                    <li><strong>Height: </strong>2 - 3 feet</li>
+                    <li><strong>Blooms in: </strong>Mid‑Summer - Mid‑Fall</li>
+                    <li><strong>Features: </strong>Tolerates heat</li> -->
+                </ul>
+            </div>
+            </div>
+          
+            </div>
+        </div>
+    </div>
+    <div id="Packagenceimmo">
+        <center><h2>Pack agence immo</h2></center>
+        <div id="container">
+            <div class="product-details">
+            <h1>Pack agence immo</h1>
+            <span class="hint-star star">
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                <i class="fa fa-star-o" aria-hidden="true"></i>
+            </span>
+                <p class="information">" votre ispace immo "
+                    <link href="https://fonts.googleapis.com/css2?family=Cookie&display=swap" rel="stylesheet">
+
+                    <div id="btn"><span class="noselect">  <a href="signup.html">prendre</a>
+                        </span><div id="circle"></div></div>
+                </p>
+        
+     
+                    
+        </div>
+            
+        <div class="product-image">
+            
+            <img src="img/pack/imag29.jpg" alt="Omar Dsoky">
+         
+        <div class="info">
+            <h2>caractéristiques</h2>
+            <ul>
+                <li><strong>annonce: </strong>20</li>
+                <li><strong>prix: </strong>500 dh par moi</li>
+                <!-- <li><strong>Zones: </strong>9 - 11</li>
+                <li><strong>Height: </strong>2 - 3 feet</li>
+                <li><strong>Blooms in: </strong>Mid‑Summer - Mid‑Fall</li>
+                <li><strong>Features: </strong>Tolerates heat</li> -->
+            </ul>
+        </div>
+        </div>
+      
+        </div>
+    </div>
+</div>
+<div id="packbronze">
+    <center><h2>Pack bronze</h2></center>
+    <div id="container">
+        <div class="product-details">
+        <h1>Pack bronze</h1>
+        <span class="hint-star star">
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star-half-o" aria-hidden="true"></i>
+            <i class="fa fa-star-o" aria-hidden="true"></i>
+        </span>
+            <p class="information">" Découvrez 234 annonces pour bronze et  meilleur prix. la plus grande plateforme de petites annonces  "
+                <link href="https://fonts.googleapis.com/css2?family=Cookie&display=swap" rel="stylesheet">
+
+                <div id="btn"><span class="noselect"> <a href="signup.html">prendre</a>
+                    </span><div id="circle"></div></div>
+
+            </p>
+  
+                
+    </div>
+        
+    <div class="product-image">
+        
+        <img src="img/pack/imag26.jpg" alt="Omar Dsoky">
+     
+    <div class="info">
+        <h2>caractéristiques</h2>
+        <ul>
+            <li><strong>annonce: </strong>10</li>
+            <li><strong>prix: </strong>300 dh par moi</li>
+            <!-- <li><strong>Zones: </strong>9 - 11</li>
+            <li><strong>Height: </strong>2 - 3 feet</li>
+            <li><strong>Blooms in: </strong>Mid‑Summer - Mid‑Fall</li>
+            <li><strong>Features: </strong>Tolerates heat</li> -->
+        </ul>
+    </div>
+    </div>
+  
+    </div>
+</div>
+</div>
+<div id="packsurmesure">
+    <center><h2>Pack sur mesure</h2></center>
+    <div id="container">
+        <div class="product-details">
+        <h1>Pack sur mesure</h1>
+        <span class="hint-star star">
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star-half-o" aria-hidden="true"></i>
+            <i class="fa fa-star-o" aria-hidden="true"></i>
+        </span>
+            <p class="information">" vote espace avec votre mesure "
+                <link href="https://fonts.googleapis.com/css2?family=Cookie&display=swap" rel="stylesheet">
+
+        <div id="btn"><span class="noselect"> <a href="signup.html">prendre</a>
+            </span><div id="circle"></div></div>
+            </p>
+   
+                
+    </div>
+        
+    <div class="product-image">
+        
+        <img src="img/pack/imag22.jfif" alt="Omar Dsoky">
+     
+    <div class="info">
+        <h2>caractéristiques</h2>
+        <ul>
+            <li><strong>annonce: </strong>sur votre mesure</li>
+            <li><strong>prix: </strong>2000 dh par moi</li>
+            <!-- <li><strong>Zones: </strong>9 - 11</li>
+            <li><strong>Height: </strong>2 - 3 feet</li>
+            <li><strong>Blooms in: </strong>Mid‑Summer - Mid‑Fall</li>
+            <li><strong>Features: </strong>Tolerates heat</li> -->
+        </ul>
+    </div>
+    </div>
+  
+    </div>
+</div>
+</div>
+                
+                
+               
+
+
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="js/main.js"></script>
